@@ -645,7 +645,7 @@ h3 {
 
 .portfolio__wrapper {
   width: 100%;
-  height: 50vh;
+  height: auto;
   padding: 3rem 2rem;
   background-color: var(--grey-dark);
 }
@@ -654,10 +654,26 @@ h3 {
   width: 100%;
   height: auto;
   margin-bottom: 2rem;
-
   color: var(--enfasis-color);
   font-size: 30px;
   text-align: center;
+}
+
+.portfolio__slider {
+  width: 100%;
+  height: 300px;
+  overflow: hidden;
+  border-radius: 20px;
+  margin-bottom: 10px;
+  background-color: var(--grey-light);
+}
+
+#img__slider {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: top;
+  transition: all 300ms ease;
 }
 
 /* #endregion */
@@ -1006,6 +1022,18 @@ h3 {
 
   /* ?------------------------------------------ */
 
+  .portfolio__slider {
+    width: 90%;
+    height: 300px;
+    margin: 0 auto;
+    overflow: hidden;
+    border-radius: 20px;
+    margin-bottom: 10px;
+    background-color: var(--grey-light);
+  }
+
+  /* ?------------------------------------------ */
+
   .form__wrapper {
     width: 100%;
     height: auto;
@@ -1346,6 +1374,19 @@ h3 {
     justify-content: center;
     padding: 1rem;
     align-items: center;
+  }
+
+  /* ?------------------------------------------ */
+
+
+  .portfolio__slider {
+    max-width: 70%;
+    height: 500px;
+    margin: 0 auto;
+    overflow: hidden;
+    border-radius: 20px;
+    margin-bottom: 10px;
+    background-color: var(--grey-light);
   }
 
   /* ?------------------------------------------ */
