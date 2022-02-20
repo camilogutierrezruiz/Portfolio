@@ -7,13 +7,226 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Portafolio</title>
 
+    <!-- Icons -->
+    <script src="https://kit.fontawesome.com/10b7206214.js" crossorigin="anonymous"></script>
+
     <!-- STYLES / SCRIPTS -->
-    <link rel="stylesheet" href="css/styles.css">
-    <script defer src="js/main.js"></script>
+    <link rel="stylesheet" href="./css/normalize.css" type="text/CSS">
+    <link rel="stylesheet" href="./css/styles.css" type="text/CSS">
+    <script defer src="./js/main.js" type="text/javascript"></script>
 </head>
 
 <body>
+    <a class="menu__anchor" href="#star_page">
+        <i class="fa-solid fa-chevron-up"></i>
+    </a>
+    <!-- #region HEADER -->
+    <header class="header__wrapper" id="star_page">
 
+        <nav class="menu">
+            <ul class="menu__nav">
+                <div class="close__wrapper">
+                    <button class="nav__button nav__button--mod" id="close__menu">
+                        <i class="fa-solid fa-xmark"></i>
+                    </button>
+                </div>
+                <div class="menu__wrapper">
+                    <div class="menu__items">
+                        <li class="items"><a id="nav__menu--item" href="#about">acerca de mí</a></li>
+                        <li class="items"><a id="nav__menu--item" href="#services">servicios</a></li>
+                        <li class="items"><a id="nav__menu--item" href="#skills">habilidades</a></li>
+                        <li class="items"><a id="nav__menu--item" href="#portfolio">portafolio</a></li>
+                        <li class="items"><a id="nav__menu--item" href="#contact">contacto</a></li>
+                    </div>
+                    <div class="nav__icons">
+                        <a class="nav__menu--icon" href="https://www.linkedin.com/" target="_blank"><i
+                                class="fa-brands fa-linkedin-in"></i></a>
+                        <a class="nav__menu--icon" href="https://github.com/" target="_blank"><i
+                                class="fa-brands fa-github"></i></a>
+                        <a class="nav__menu--icon" href="https://www.instagram.com/" target="_blank"><i
+                                class="fa-brands fa-instagram"></i></a>
+                    </div>
+                </div>
+            </ul>
+            <button class="nav__button" id="open__menu">
+                <i class="fa-solid fa-bars"></i>
+            </button>
+        </nav>
+        <section class="subheader">
+            <section class="menu__nav--desktop">
+                <nav class="menu__desktop--items">
+                    <li class="items"><a id="nav__menu--item" href="#about">acerca de mí</a></li>
+                    <li class="items"><a id="nav__menu--item" href="#services">servicios</a></li>
+                    <li class="items"><a id="nav__menu--item" href="#skills">habilidades</a></li>
+                    <li class="items"><a id="nav__menu--item" href="#portfolio">portafolio</a></li>
+                    <li class="items"><a id="nav__menu--item" href="#contact">contacto</a></li>
+                </nav>
+            </section>
+            <div class="subheader__text">
+                <div class="subheader__name">
+                    <h1>
+                        Soy<br><span>Jorge</span>
+                    </h1>
+                    <div class="separator"></div>
+                    <h2>
+                        Marketing y diseñador UX/UI
+                    </h2>
+                </div>
+                <div class="subheader__experience">
+                    <h2>
+                        <span>3 años</span><br>experiencia
+                    </h2>
+                    <a class="subheader__cta" href="#">Contáctame</a>
+                </div>
+            </div>
+            <div class="portrait__wrapper">
+                <div class="subheader__background">
+                    <img class="subheader__portrait" src="./assets/portrait.png" alt="Portrait Porgramer">
+                </div>
+            </div>
+            <div class="subheader__icons">
+                <a href="#" class="icons">
+                    <i class="fa-brands fa-google"></i>
+                </a>
+                <a href="#" class="icons">
+                    <i class="fa-brands fa-amazon"></i>
+                </a>
+                <a href="#" class="icons">
+                    <i class="fa-brands fa-spotify"></i>
+                </a>
+            </div>
+        </section>
+    </header>
+    <!-- #endregion -->
+    <!-- #region ABOUT -->
+    <section class="about__wrapper" id="about">
+        <div class="about__title">
+            <h2>
+                Acerca de mí
+            </h2>
+        </div>
+        <div class="about__description">
+            <p>
+                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Possimus consequatur eum debitis quo sequi
+                odio vero ipsa! Facere perspiciatis expedita sit labore repudiandae voluptatum commodi porro. Eveniet
+                debitis quam, repellat error a officia eos nesciunt. Numquam quisquam commodi reiciendis rerum libero
+                laborum ex omnis repudiandae, incidunt id. Similique, alias consectetur.
+            </p>
+        </div>
+    </section>
+    <!-- #endregion -->
+    <!-- #region SERVICES -->
+    <section class="services__wrapper" id="services">
+        <div class="services__title">
+            <h2>
+                Servicios
+            </h2>
+        </div>
+        <div class="services__card--wrapper">
+            <div class="services__card">
+                <div class="card__icon">
+                    <i class="fa-solid fa-pen-nib"></i>
+                </div>
+                <div class="card__content">
+                    <h2 class="card__title">
+                        UX/UX Design
+                    </h2>
+                    <div class="card__paragraph">
+                        Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+                    </div>
+                </div>
+            </div>
+            <div class="services__card">
+                <div class="card__icon">
+                    <i class="fa-solid fa-bullhorn"></i>
+                </div>
+                <div class="card__content">
+                    <h2 class="card__title">
+                        Marketing
+                    </h2>
+                    <div class="card__paragraph">
+                        Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+                    </div>
+                </div>
+            </div>
+            <div class="services__card">
+                <div class="card__icon">
+                    <i class="fa-solid fa-magnifying-glass"></i>
+                </div>
+                <div class="card__content">
+                    <h2 class="card__title">
+                        Research
+                    </h2>
+                    <div class="card__paragraph">
+                        Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- #endregion -->
+    <!-- #region SKILLS -->
+    <section class="skills__wrapper" id="skills">
+        <h2 class="skill__title">
+            Habilidades
+        </h2>
+        <div class="skills__lang">
+            <div class="skill__icon">
+                <i class="fa-brands fa-html5"></i>
+                <div class="skill__name">
+                    <span>HTML</span>
+                </div>
+            </div>
+            <div class="skill__icon">
+                <i class="fa-brands fa-css3-alt"></i>
+                <div class="skill__name">
+                    <span>CSS</span>
+                </div>
+            </div>
+            <div class="skill__icon">
+                <i class="fa-brands fa-js"></i>
+                <div class="skill__name">
+                    <span>Javascript</span>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- #endregion -->
+    <!-- #region PORTAFOLIO -->
+    <section class="portfolio__wrapper" id="portfolio">
+        <h2 class="portfolio__title">
+            Portafolio
+        </h2>
+        <div class="portfolio__slider">
+            <img src="" alt="" id="img__slider">
+        </div>
+    </section>
+    <!-- #endregion -->
+    <!-- #region CONTACTO-->
+    <section class="form__wrapper" id="contact">
+        <h2 class="form__title">
+            Contacto
+        </h2>
+        <form action="" class="form">
+            <input class="form__item form__name" type="name" placeholder="nombre">
+            <input class="form__item form__email" type="email" placeholder="correo">
+            <textarea clas name="" id="" cols="30" rows="5" class="form__item form__message"
+                placeholder="mensaje"></textarea>
+            <button type="submit" class="form__button">
+                enviar
+            </button>
+        </form>
+    </section>
+    <!-- #endregion -->
+    <!-- #region FOOTER -->
+    <footer class="footer__wrapper">
+        <div class="footer__icons">
+            <a href="https://www.linkedin.com/" target="_blank"><i class="fa-brands fa-linkedin-in"></i></a>
+            <a href="https://github.com/" target="_blank"><i class="fa-brands fa-github"></i></a>
+            <a href="https://www.instagram.com/" target="_blank"><i class="fa-brands fa-instagram"></i></a>
+        </div>
+    </footer>
+    <!-- #endregion -->
 </body>
 
 </html>
