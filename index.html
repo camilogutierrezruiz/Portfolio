@@ -17,35 +17,51 @@
 </head>
 
 <body>
+    <a class="menu__anchor" href="#star_page">
+        <i class="fa-solid fa-chevron-up"></i>
+    </a>
     <!-- #region HEADER -->
-    <header class="header__wrapper">
+    <header class="header__wrapper" id="star_page">
+
         <nav class="menu">
             <ul class="menu__nav">
                 <div class="close__wrapper">
-                    <button class="nav__button nav__button--mod">
+                    <button class="nav__button nav__button--mod" id="close__menu">
                         <i class="fa-solid fa-xmark"></i>
                     </button>
                 </div>
                 <div class="menu__wrapper">
                     <div class="menu__items">
-                        <li class="items"><a href="">acerca de mí</a></li>
-                        <li class="items"><a href="">servicios</a></li>
-                        <li class="items"><a href="">habilidades</a></li>
-                        <li class="items"><a href="">portafolio</a></li>
-                        <li class="items"><a href="">contacto</a></li>
+                        <li class="items"><a id="nav__menu--item" href="#about">acerca de mí</a></li>
+                        <li class="items"><a id="nav__menu--item" href="#services">servicios</a></li>
+                        <li class="items"><a id="nav__menu--item" href="#skills">habilidades</a></li>
+                        <li class="items"><a id="nav__menu--item" href="#portfolio">portafolio</a></li>
+                        <li class="items"><a id="nav__menu--item" href="#contact">contacto</a></li>
                     </div>
                     <div class="nav__icons">
-                        <a href="#"><i class="fa-brands fa-linkedin-in"></i></a>
-                        <a href="#"><i class="fa-brands fa-github"></i></a>
-                        <a href="#"><i class="fa-brands fa-instagram"></i></a>
+                        <a class="nav__menu--icon" href="https://www.linkedin.com/" target="_blank"><i
+                                class="fa-brands fa-linkedin-in"></i></a>
+                        <a class="nav__menu--icon" href="https://github.com/" target="_blank"><i
+                                class="fa-brands fa-github"></i></a>
+                        <a class="nav__menu--icon" href="https://www.instagram.com/" target="_blank"><i
+                                class="fa-brands fa-instagram"></i></a>
                     </div>
                 </div>
             </ul>
-            <button class="nav__button">
+            <button class="nav__button" id="open__menu">
                 <i class="fa-solid fa-bars"></i>
             </button>
         </nav>
         <section class="subheader">
+            <section class="menu__nav--desktop">
+                <nav class="menu__desktop--items">
+                    <li class="items"><a id="nav__menu--item" href="#about">acerca de mí</a></li>
+                    <li class="items"><a id="nav__menu--item" href="#services">servicios</a></li>
+                    <li class="items"><a id="nav__menu--item" href="#skills">habilidades</a></li>
+                    <li class="items"><a id="nav__menu--item" href="#portfolio">portafolio</a></li>
+                    <li class="items"><a id="nav__menu--item" href="#contact">contacto</a></li>
+                </nav>
+            </section>
             <div class="subheader__text">
                 <div class="subheader__name">
                     <h1>
@@ -60,9 +76,7 @@
                     <h2>
                         <span>3 años</span><br>experiencia
                     </h2>
-                    <div class="subheader__cta">
-                        <a href="#">Contáctame</a>
-                    </div>
+                    <a class="subheader__cta" href="#">Contáctame</a>
                 </div>
             </div>
             <div class="portrait__wrapper">
@@ -93,9 +107,10 @@
         </div>
         <div class="about__description">
             <p>
-                Lorem ipsum dolor, sit amet consectetur adipisicing elit. Cumque officiis eligendi deleniti atque culpa
-                impedit beatae quaerat minima? Consectetur incidunt voluptatibus reiciendis quas, est voluptates
-                consequuntur laborum nihil delectus odio!
+                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Possimus consequatur eum debitis quo sequi
+                odio vero ipsa! Facere perspiciatis expedita sit labore repudiandae voluptatum commodi porro. Eveniet
+                debitis quam, repellat error a officia eos nesciunt. Numquam quisquam commodi reiciendis rerum libero
+                laborum ex omnis repudiandae, incidunt id. Similique, alias consectetur.
             </p>
         </div>
     </section>
@@ -151,7 +166,7 @@
     </section>
     <!-- #endregion -->
     <!-- #region SKILLS -->
-    <section class="skills__wrapper">
+    <section class="skills__wrapper" id="skills">
         <h2 class="skill__title">
             Habilidades
         </h2>
@@ -178,10 +193,14 @@
     </section>
     <!-- #endregion -->
     <!-- #region PORTAFOLIO -->
-
+    <section class="portfolio__wrapper" id="portfolio">
+        <h2 class="portfolio__title">
+            Portafolio
+        </h2>
+    </section>
     <!-- #endregion -->
     <!-- #region CONTACTO-->
-    <section class="form__wrapper">
+    <section class="form__wrapper" id="contact">
         <h2 class="form__title">
             Contacto
         </h2>
@@ -199,9 +218,9 @@
     <!-- #region FOOTER -->
     <footer class="footer__wrapper">
         <div class="footer__icons">
-            <a href="#"><i class="fa-brands fa-linkedin-in"></i></a>
-            <a href="#"><i class="fa-brands fa-github"></i></a>
-            <a href="#"><i class="fa-brands fa-instagram"></i></a>
+            <a href="https://www.linkedin.com/" target="_blank"><i class="fa-brands fa-linkedin-in"></i></a>
+            <a href="https://github.com/" target="_blank"><i class="fa-brands fa-github"></i></a>
+            <a href="https://www.instagram.com/" target="_blank"><i class="fa-brands fa-instagram"></i></a>
         </div>
     </footer>
     <!-- #endregion -->
